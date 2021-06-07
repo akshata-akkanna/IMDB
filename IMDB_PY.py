@@ -1,3 +1,7 @@
+#How many movies are made each year? 
+      #Show the distribution over the past 100 years.
+
+
 # Databricks notebook source
 #Import Spark Session - Encompasses SparkContext & SQLContext 
 from pyspark.sql import SparkSession
@@ -17,6 +21,8 @@ display(FinalDistribution)
 
 
 # COMMAND ----------
+# Which actor-director pairs have the most collaborations?
+# Show the top 10
 
 #Import Spark Session - Encompasses SparkContext & SQLContext 
 from pyspark.sql import SparkSession
@@ -63,6 +69,11 @@ finalSet = final.head(10)
 display(finalSet)
 
 # COMMAND ----------
+# Find the genre(s) that an actor has mostly worked in, i.e. the number of movies and tv shows per genre. Note that the knownForTitles
+# column in the name.basic.tsv file does not contain the whole filmography of an actor.
+# Show this for Omar Sy, Frances McDormand, and Saoirse Ronan
+
+
 
 #Import Spark Session - Encompasses SparkContext & SQLContext 
 from pyspark.sql import SparkSession
